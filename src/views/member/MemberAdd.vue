@@ -66,7 +66,7 @@ const onAdd = (): void => {
         <label for="addNote">備考&nbsp;</label>
       </dt>
       <dd>
-        <textarea id="addNote" v-model="member.note" required />
+        <textarea id="addNote" v-model="member.note" />
       </dd>
     </dl>
     <button type="submit">登録</button>
