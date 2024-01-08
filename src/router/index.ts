@@ -13,7 +13,7 @@ const routeSettings: RouteRecordRaw[] = [
     path: "/member/memberList",
     name: "MemberList",
     component: () => {
-      return import("@/views/MemberList.vue");
+      return import("@/views/member/MemberList.vue");
     },
   },
 ];
