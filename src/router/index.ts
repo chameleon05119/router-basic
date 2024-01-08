@@ -9,10 +9,17 @@ const routeSettings: RouteRecordRaw[] = [
     name: "AppTop",
     component: AppTop,
   },
+  {
+    path: "/member/memberList",
+    name: "MemberList",
+    component: () => {
+      return import("@/views/MemberList.vue");
+    },
+  },
 ];
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHistory(),
   routes: routeSettings,
 });
 
