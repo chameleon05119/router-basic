@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { inject } from "vue";
-import { RouterLink } from "vue-router";
+import { RouterLink, RouterView } from "vue-router";
 import type { Member } from "@/interfaces";
 
 const memberList = inject("memberList") as Map<number, Member>;
@@ -29,4 +29,5 @@ const memberList = inject("memberList") as Map<number, Member>;
       </li>
     </ul>
   </section>
+  <RouterView />
 </template>
